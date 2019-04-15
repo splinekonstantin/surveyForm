@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="surveyForm.1.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- title -->
+    <h1 id="title">Survey Form</h1>
+    
+    <!-- form -->
+    <form id="survey-form" action="" method="get">
+
+        <!-- background of a form -->
+        <div id="outer">
+
+            <!-- description -->
+            <p id="description">Don't be shy! Introduce yourself</p>
+        
+            <!-- grid -->
+            <div id="grid">
+
+                <!-- Name -->
+                <div class="labelsTab">
+                    <label for="name" id="name-label">*Name:</label>
+                </div>
+                <div class="rightTab">
+                    <input id="name" class="inputField" type="text" placeholder="Enter Your Name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="labelsTab">
+                    <label for="email" id="email-label">*Email:</label>
+                </div>
+                <div class="rightTab">
+                    <input id="email" class="inputField" type="email" placeholder="Enter Your Email" required>
+                </div>
+        
+                <!-- Age -->
+                <div class="labelsTab">
+                    <label for="number" id="number-label">*Age:</label>
+                </div>
+                <div class="rightTab">
+                    <input id="number" class="inputField" type="number" min="3" max="199" placeholder="Age" required>
+                </div>
+                
+                <!-- dropdown -->
+                <div class="labelsTab">
+                    <label for="dropdown" id="dropdown-label">How did you find my webside?</label>
+                </div>
+                <div class="rightTab">
+                    <select name="cameFrom" id="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="fb">Facebook</option>
+                        <option value="ins">Instagram</option>
+                        <option value="fcc">FCC forum</option>
+                        <option value="yt">Youtube</option>
+                    </select>
+                </div>
+
+                <!-- radio -->
+                <div class="labelsTab choise">
+                    <label for="recommendation" id="recommendation-label">How likely You would recommend my webside to a friend?</label>
+                </div>
+                <div class="rightTab">
+                    <div class="option">
+                        <label><input type="radio" name="recommndation" value="yes">Of course!</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="radio" name="recommndation" value="maybe">Maybe</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="radio" name="recommndation" value="no">Hell no!</label>
+                    </div>
+                </div>
+
+                <!-- checkbox -->
+                <div class="labelsTab choise">
+                    <label for="projects" id="projects-label">What programming languages or frameworks are you interested in learning?</label>
+                </div>
+                <div class="rightTab">
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="react">React</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="vue">Vue</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="angular">Angular</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="bootstrap">Bootstrap</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="vanilajs">Vanila Java Script</label>
+                    </div>
+                    <div class="option">
+                        <label><input type="checkbox" name="projects" value="node">Node js</label>
+                    </div>
+                </div>
+                
+                <!-- textarea -->
+                <div class="labelsTab choise">
+                    <label for="comment" id="comment-label">Leave a comment:</label>
+                </div>
+                <div class="rightTab">
+                    <textarea rows="5" name="comment" id="comment" class="inputField"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

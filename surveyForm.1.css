@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, button {
+    font-family: montserrat;
+    text-align: center;
+}
+
+select {
+    height: 35px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: top;
+} 
+
+textarea {
+    resize: none;
+}
+
+.labelsTab {
+    margin-top: 7px;
+}
+
+.option {
+    padding-bottom: 5px;
+}
+
+.rightTab, .labelsTab {
+    text-align: left;
+    padding: 5px;
+}
+.inputField, select {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    padding: 10px;
+    outline: none;
+}
+
+#outer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgb(226, 245, 247);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 rgb(124, 124, 124);
+}
+
+#submit {
+    font-size: 1em;
+    height: 40px;
+    width: 200px;
+    background-color: #59ace0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
+
+#submit:active {
+  background-color: #0065c4;
+  transform: translateY(2px);
+}
+
+@media screen and (min-width: 521px) {
+    #outer {
+        width: 75%;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .choise {
+        margin-top: 0;
+    }
+
+    .labelsTab {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .inputField, select {
+        width: 280px;
+    }
+}
