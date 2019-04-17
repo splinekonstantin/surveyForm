@@ -19,6 +19,14 @@ textarea {
     resize: none;
 }
 
+p {
+   margin-top: 20px; 
+}
+
+h1 {
+    margin: 50px;
+}
+
 .labelsTab {
     margin-top: 7px;
 }
@@ -37,6 +45,10 @@ textarea {
     border-radius: 2px;
     padding: 10px;
     outline: none;
+}
+
+.grid {
+    margin: 30px 0 30px 0;
 }
 
 #outer {
@@ -58,10 +70,13 @@ textarea {
     border: none;
     border-radius: 4px;
     outline: none;
+    margin-bottom: 25px;
+    
 }
 
 #submit:hover {
     transform: scale(1.05);
+    cursor:pointer;
 }
 
 #submit:active {
@@ -74,9 +89,10 @@ textarea {
         width: 75%;
     }
 
-    #grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        
     }
 
     .choise {
@@ -86,6 +102,7 @@ textarea {
     .labelsTab {
         text-align: right;
     }
+
 }
 
 @media screen and (min-width: 834px) {
