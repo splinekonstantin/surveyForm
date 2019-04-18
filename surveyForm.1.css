@@ -72,12 +72,14 @@ h1 {
     border-radius: 4px;
     outline: none;
     margin-bottom: 1.6rem;
+    cursor:pointer;
+    transition: all .3s ease;
     
 }
 
 #submit:hover {
     transform: scale(1.05);
-    cursor:pointer;
+    
 }
 
 #submit:active {
