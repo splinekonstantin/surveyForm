@@ -1,5 +1,5 @@
 # Survey Form
-@freecodecamp Survey Responsive Web Design Project
+@freecodecamp Survey Form Responsive Web Design Project
 
 Uses: **HTML5, CSS**.
 
